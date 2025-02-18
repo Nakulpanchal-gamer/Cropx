@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { Link } from "react-router-dom"
-import './Login.css'
+// import './Login.css'
 
 export const Login2 = () => {
 
@@ -46,6 +46,15 @@ export const Login2 = () => {
                     <Link class="forgot" to="/">Forgot Password?</Link>
                 </div>
             </form>
+    <app-root>
+      <div id="initLoader" class="init-loading-spinner-container">
+        <div style="width: 10.83rem; height: 10.83rem; position: relative">
+          <div class="spinner"></div>
+          <div class="logo"></div>
+        </div>
+      </div>
+    </app-root>
         </div>
     )
 }
+
