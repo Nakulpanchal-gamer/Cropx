@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
-export const ProjectSignup = () => {
+export const Signup = () => {
 
     const{register,handleSubmit,formState:{errors}} = useForm()
 
@@ -28,7 +28,6 @@ export const ProjectSignup = () => {
               }
             }
         }
-
 
   return (
     <div style={{textAlign:"center",color:"blue"}}>

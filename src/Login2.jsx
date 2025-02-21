@@ -31,7 +31,7 @@ export const Login2 = () => {
         <div class="container">
             <h1>LOGIN</h1>
             <form onSubmit={handleSubmit(submitHandler)}>
-                <div class="inputlabels">
+                <div>
                     <label>EMAIL ADDRESS</label>
                     <input type='email' placeholder='enter email' {...register("email", validationSchema.emailValidator)} />
                     <span>{errors.email?.message}</span>
@@ -46,14 +46,14 @@ export const Login2 = () => {
                     <Link class="forgot" to="/">Forgot Password?</Link>
                 </div>
             </form>
-    <app-root>
+    {/* <app-root>
       <div id="initLoader" class="init-loading-spinner-container">
         <div style="width: 10.83rem; height: 10.83rem; position: relative">
           <div class="spinner"></div>
           <div class="logo"></div>
         </div>
       </div>
-    </app-root>
+    </app-root> */}
         </div>
     )
 }
