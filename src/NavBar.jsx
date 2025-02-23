@@ -28,7 +28,7 @@ export const Navbar = () => {
               </Link>
             </li>
             <li class="nav-item">
-            <Link class="nav-link" to="/login2">
+            <Link class="nav-link" to="/login">
                 movies
               </Link>
             </li>

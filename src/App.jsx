@@ -1,15 +1,13 @@
 import { useState } from 'react'
-// import './Login.css'
 import { Routes, Route } from 'react-router-dom'
-import { Navbar } from './NavBar'
-import { Login2 } from './Login2'
 import { Index } from './Index'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { UserSidebar } from './components/layouts/UserSidebar'
 import "./assets/css/adminlte.css"
 import "./assets/css/adminlte.min.css"
-import { Signup2 } from './components/layouts/Signup2'
+import { Signup } from './components/layouts/Signup'
+import { Login } from './components/layouts/Login'
 function App() {
 
   return (
@@ -26,8 +24,8 @@ function App() {
         {/* <UserSidebar></UserSidebar> */}
       <Routes>
         <Route path="/user" element = { <UserSidebar/> }></Route>
-        <Route path="/login" element = { <h1>LOGIN COMPONENT</h1> }></Route>
-        <Route path="/Signup" element = { <Signup2/> }></Route>
+        <Route path="/login" element = { <Login/> }></Route>
+        <Route path="/Signup" element = { <Signup/> }></Route>
       </Routes>
       </div>
     </body>
