@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Index } from './Index'
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
 import { UserSidebar } from './components/layouts/UserSidebar'
 import "./assets/css/adminlte.css"
 import "./assets/css/adminlte.min.css"
-import { Signup } from './components/layouts/Signup'
+import { Signup1 } from './components/layouts/Signup1'
 import { Login } from './components/layouts/Login'
+// import "./assets/js/adminlte"
+// import "./assets/js/adminlte.min"
+import axios from 'axios'
 function App() {
 
+  axios.defaults.baseURL = "http://localhost:3000"
+  
   return (
 
     <>
@@ -19,16 +21,13 @@ function App() {
       <Route path="/login2" element= {<Login2/>}></Route>
     </Routes>
     <Footer></Footer> */}
-    <body className='layout-fixed sidebar-expand-lg bg-body-tertiary sidebar-open app-loaded'>
-      <div className='app-wrapper'>
+  
         {/* <UserSidebar></UserSidebar> */}
       <Routes>
         <Route path="/user" element = { <UserSidebar/> }></Route>
         <Route path="/login" element = { <Login/> }></Route>
-        <Route path="/Signup" element = { <Signup/> }></Route>
+        <Route path="/Signup" element = { <Signup1/> }></Route>
       </Routes>
-      </div>
-    </body>
     </>
   )
 }
