@@ -14,12 +14,11 @@ export const Login = () => {
     const res = await axios.post("/user/login", data)
     console.log(res.data)
     if(res.status === 200){
-      alert("Login Success") //tost...
+      alert("Login Sucessfully")
       localStorage.setItem("id",res.data.data._id)
       localStorage.setItem("role",res.data.data.roleId.name)
-
       if(res.data.data.roleId.name === "USER"){
-        navigate("/user") //check in app.js
+        navigate("/user")
       }
     }
     else{

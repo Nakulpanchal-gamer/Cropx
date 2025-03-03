@@ -118,6 +118,7 @@ export const UserSidebar = () => {
           </nav>
         </div>
       </aside>
+      
       <main className='app-main'>
           <Outlet></Outlet>
       </main>
