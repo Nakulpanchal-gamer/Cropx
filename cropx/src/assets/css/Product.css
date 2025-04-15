@@ -1,0 +1,143 @@
+/* General Styling for the Product Management Page */
+.product-management {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Wrapper */
+  .table-wrapper {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  th,
+  td {
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Add Sorting Arrow Icon */
+  th.sortable:hover {
+    background-color: #0056b3;
+  }
+  
+  th.sortable::after {
+    content: '\2195'; /* Unicode for up/down arrow */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #fff;
+  }
+  
+  th.asc::after {
+    content: '\2191'; /* Up arrow for ascending */
+  }
+  
+  th.desc::after {
+    content: '\2193'; /* Down arrow for descending */
+  }
+  
+  /* Alternating Row Colors */
+  tbody tr:nth-child(odd) {
+    background-color: #fafafa;
+  }
+  
+  /* Buttons Styling */
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Add New Product Button */
+  button.btn-primary {
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #218838;
+  }
+  
+  /* Edit Button */
+  button.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Delete Button */
+  button.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  button.btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* "No Products" Message */
+  td[colspan="4"] {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    padding: 20px;
+  }
+  
